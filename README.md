@@ -1,3 +1,3 @@
 # Notes app is created in kotlin language
 
-<h1> Set Up Kotlin First and Use this Project </h1>
+### Set up Kotlin and Clone The Project to Your Local Machine and See the Magic
