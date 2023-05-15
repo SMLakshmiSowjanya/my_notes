@@ -12,4 +12,5 @@ class NoteViewModelProviderFactory(
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return NoteViewModel(app, noteRepository) as T
     }
+
 }

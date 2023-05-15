@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background_white"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".fragments.UpdateNoteFragment">
 
@@ -26,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:background="@color/background_white"
                 android:padding="16dp">
 
 

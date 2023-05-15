@@ -7,8 +7,8 @@ import androidx.navigation.findNavController
 import com.example.notes.MainActivity
 import com.example.notes.R
 import com.example.notes.databinding.FragmentNewNoteBinding
+import com.example.notes.helper.toast
 import com.example.notes.model.Note
-import com.example.notes.toast
 import com.example.notes.viewmodel.NoteViewModel
 import com.google.android.material.snackbar.Snackbar
 
@@ -17,20 +17,19 @@ class NewNoteFragment : Fragment(R.layout.fragment_new_note) {
 
     private var _binding: FragmentNewNoteBinding? = null
     private val binding get() = _binding!!
-
     private lateinit var noteViewModel: NoteViewModel
     private lateinit var mView: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         _binding = FragmentNewNoteBinding.inflate(
             inflater,
             container,
@@ -39,6 +38,7 @@ class NewNoteFragment : Fragment(R.layout.fragment_new_note) {
 
         return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -64,6 +64,15 @@ class NewNoteFragment : Fragment(R.layout.fragment_new_note) {
             activity?.toast("Please enter note title")
         }
     }
+
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        menu.clear()
+        inflater.inflate(R.menu.new_note_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_save -> {
@@ -72,11 +81,7 @@ class NewNoteFragment : Fragment(R.layout.fragment_new_note) {
         }
         return super.onOptionsItemSelected(item)
     }
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        menu.clear()
-        inflater.inflate(R.menu.new_note_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
+
 
     override fun onDestroy() {
         super.onDestroy()
