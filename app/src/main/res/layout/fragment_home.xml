@@ -40,8 +40,8 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/background_white"
         android:elevation="10dp"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="32dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="28dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintBottom_toTopOf="@+id/fabAddNote"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="50dp"
-            android:text="No notes available!!!"
+            android:text="Create a note !!!"
             android:textColor="@color/black"
             android:textSize="18sp" />
 

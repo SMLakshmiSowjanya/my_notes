@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="200"
-                    android:text="Note title"
+                    android:text="Title"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:maxHeight="170dp"
-                android:text="Type something..."
+                android:text="Start typing..."
                 android:textColor="@color/hintColor"
                 android:textSize="16sp" />
         </LinearLayout>
