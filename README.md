@@ -2,7 +2,9 @@
 
 ### Clone The Project to Your Local Machine and See the Magic
 <h1>Preview</h1>
+<h2>Home Page</h2>
 <img src="Screenshot_20230525_124544.png" width="267" height="580">
+<h2>Create a new note here</h2>
 <img src="Screenshot_20230525_124332.png" width="267" height="580">
 <img src="Screenshot_20230525_124253.png" width="267" height="580">
 <img src="Screenshot_20230525_124423.png" width="267" height="580">
