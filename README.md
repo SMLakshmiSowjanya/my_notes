@@ -2,7 +2,7 @@
 
 ### Clone The Project to Your Local Machine and See the Magic
 
-<h1>Preview</h1>
+<h1>Samples Of My Notes App Down Here 👇</h1>
 
 <p>Home Page</p>
 <img src="Screenshot_20230525_124544.png" width="267" height="580">
